@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Yun Cheng</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Yun Cheng" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pages/21325.html" />
+<meta property="og:url" content="http://localhost:4000/pages/21325.html" />
+<meta property="og:site_name" content="Yun Cheng" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Yun Cheng" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/21325.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar.png"}},"headline":"Yun Cheng","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <script>
+    MathJax = {
+      chtml: { mathmlSpacing: true },
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <section class="post">
+  
+    <h1 id="21-325-probability">21-325 Probability</h1>
+
+<blockquote>
+  <p>“All that matter to the future is present.”</p>
+
+  <p>-AP</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="sigma-field">$\sigma$-field</h4>
+
+<ol>
+  <li>$\Omega \in \mathcal{F}$</li>
+  <li>$A \in \mathcal{F} \Rightarrow A^c \in \mathcal{F}$</li>
+  <li>$A_1, A_2, \dots \in \mathcal{F} \Rightarrow \bigcup_{i\ge 1}A_i \in \mathcal{F}$ (countable union)</li>
+</ol>
+
+<hr />
+
+<h4 id="probability-measures">Probability Measures</h4>
+
+<ol>
+  <li>$\mathbb{P}[\Omega]=1$ (normalized)</li>
+  <li>$A_1, A_2,\dots$ disjoint $\Rightarrow \mathbb{P}[\bigcup_{k\ge 1}A_k]=\sum_{k \ge 1}\mathbb{P}[A_k]$ ($\sigma$-additive, also known as countable additivity)</li>
+</ol>
+
+<hr />
+
+<p>$\mathbb{P}[A \cup B] \ge \mathbb{P}[A]+\mathbb{P}[B]$</p>
+
+<p>$\mathbb{P}[\bigcup_{k \ge 1}A_k] \ge \sum_{k \ge 1} \mathbb{P}[A_k]$</p>
+
+<hr />
+
+<h4 id="monoticity-of-probabiltiy-measure">Monoticity of probabiltiy measure</h4>
+
+<p>$A \subseteq B \Rightarrow \mathbb{P}[A] \ge \mathbb{P}[B]$</p>
+
+<hr />
+
+<h4 id="bayes-formula">Baye’s Formula</h4>
+
+<p>Given $\mathbb{P}[A],\mathbb{P}[B]&gt;0$,</p>
+
+\[\mathbb{P}[A|B]=\frac{\mathbb{P}[B|A]\mathbb{P}[A]}{\mathbb{P}[B]}\Rightarrow\mathbb{P}[A_i|B]=\mathbb{P}[B|A_i]\frac{\mathbb{P}[A_i]}{\sum_{i=1,\dots,n}\mathbb{P}[B|A_i]\mathbb{P}[A_i]}\]
+
+<hr />
+
+<h4 id="independence">Independence</h4>
+
+<p>$A,B$ independent $\Rightarrow \mathbb{P}[A \cap B]=\mathbb{P}[A]\mathbb{P}[B]$</p>
+
+<p>$(A_{\alpha}) \in \mathcal{F}$ are independent $\Leftrightarrow$ for every finite collection $\alpha_1,\dots,\alpha_k, \mathbb{P}[\bigcap_{i=1,\dots,k}A_{\alpha_i}]=\prod_{i=1,\dots,k}\mathbb{P}[A_{\alpha_i}]$</p>
+
+<hr />
+
+<h4 id="negative-binomial-distribution-waiting-time-for-nth-success">Negative binomial distribution (waiting time for $n$th success)</h4>
+
+\[\mu_{T_n}(k)=\mathbb{P}[T_n=k]=p^n(1-p)^{k-n}\binom{k-1}{n-1}\]
+
+<hr />
+
+<p>Var$(X)=\mathbb{E}[(X-\mathbb{E}[X])^2]=\mathbb{E}[X^2]-(\mathbb{E}[X])^2$</p>
+
+<p>Var$(\alpha X)=\alpha^2$Var$(X)$</p>
+
+<hr />
+
+<h4 id="transformation-formula">Transformation formula</h4>
+
+\[\mathbb{E}[g(X)]=\sum_{x \in Im(X)}g(x)\mathbb{P}[X=x]\]
+
+<hr />
+
+<h4 id="conditional-expectation-and-conditional-variance">Conditional expectation and conditional variance</h4>
+
+<ol>
+  <li>Conditional expectation: $\mathbb{E}[X\mid A]=\sum_{x \in Im(X)}x \mathbb{P}[X=x\mid A]$</li>
+  <li>Conditional variance: Var$(X\mid A)=\mathbb{E}[X-\mathbb{E}[X])^2\mid A]=\mathbb{E}[X^2\mid A]-(\mathbb{E}[X\mid A])^2$</li>
+</ol>
+
+<hr />
+
+<h4 id="partition-theorem-for-expectation">Partition Theorem for expectation</h4>
+
+\[\mathbb{E}[X]=\sum_{i\ge1}\mathbb{E}[X|B_i]\mathbb{P}[B_i]\]
+
+<hr />
+
+<p>$\mu_X(x)=\mathbb{P}[X=x]=\sum_{y \in Im(Y)}\mu_{X,Y}(x, y)$</p>
+
+<p>If we know the joint distribution, then we can compute the marginal but not the converse.</p>
+
+<hr />
+
+<ol>
+  <li>Expectation: $\mathbb{E}[g(\vec{X})]=\sum_{x \in Im(\vec{X})} g(\vec{x})\mu_{\vec{X}}(\vec{x})$</li>
+  <li>Conditional distribution: $\mu_{X,Y}(x, y)=\mu_{X\mid Y}(x,y)\mu_Y(y)=\mu_{Y\mid X}(x,y)\mu_X(x)$</li>
+</ol>
+
+<hr />
+
+<p>Independence $\Leftrightarrow \mu_{X_1,\dots,X_n}(x_1,\dots,x_n)=\prod_{i=1,\dots,n}\mu_{X_i}(x_i)$</p>
+
+<p>That is, joint distribution = product of marginals.</p>
+
+<p>$X, Y$ independent , then $\mu_{g(X),h(Y)}(k,l)=\mu_{g(X)}(k)\cdot \mu_{h(Y)}(L)$ and $\mathbb{E}[XY]=\mathbb{E}[X]\cdot \mathbb{E}[Y]$</p>
+
+<hr />
+
+<h4 id="covariance">Covariance</h4>
+
+\[\text{Cov}(X,Y)=\mathbb{E}[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])]=\mathbb{E}[XY]-\mathbb{E}[X]\cdot\mathbb{E}[Y]\]
+
+<p>Noted that being independent $\Rightarrow$ uncorrelated but the converse is false:</p>
+
+<ol>
+  <li>
+    <p>Bilinear and symmetric: \(\text{Cov}(aX+bY,Z)=a\text{Cov}(X,Z)+b\text{Cov}(Y,Z)=\text{Cov}(Z,aX+bY)\)</p>
+  </li>
+  <li>
+    <p>Var$(X)=$Cov$(X,X)=\mathbb{E}[X^2]=(\mathbb{E}[X])^2$</p>
+  </li>
+  <li>
+    <p>Var$(X+Y)=$Var$(X)+2$Cov$(X,Y)+$Var$(Y)$</p>
+
+    <p>Var$(X+Y)=$Var$(X)+$Var$(Y)$ if $X,Y$ are independent.</p>
+  </li>
+  <li>
+    <p>Cov$(X+$const$,Y)=$Cov$(X,Y)$</p>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="convolution">Convolution</h4>
+
+\[\mu_{X+Y}(a)=\sum_{x \in Im(X)}\mu_{X,Y}(x, a-x)=\sum_{y \in Im(Y)}\mu_X(a-y)\mu_Y(y)\]
+
+<p>Ex. sum of independent poisson is poisson: $X \sim poi(\lambda),Y \sim poi(\mu) \Rightarrow X+Y \sim poi(\lambda+\mu)$</p>
+
+<hr />
+
+<h4 id="generating-function">Generating function</h4>
+
+\[G_X(s)=\sum_{k \ge 0}p_ks^k=p_0+p_1s+p_2s^2+\dots=\mathbb{E}[s^X]\]
+
+<ol>
+  <li>
+\[\begin{cases}G_X(1)=1\\G_X(0)=\mathbb{P}[X=0]\end{cases}\]
+  </li>
+  <li>Derivative: $\left(\frac{d}{dt}\right)^kG_X(1)=\mathbb{E}[X(X-1)\dots(X-k+1)]$</li>
+  <li>$X,Y$ independent $\Rightarrow G_{X+Y}(s)=G_X(s)\cdot G_Y(s)$</li>
+</ol>
+
+<hr />
+
+<p>Bernoulli:</p>
+
+\[G_X(s)=q+ps\]
+
+<p>Binomial:</p>
+
+\[G_X(s)=\sum_{k=0,\dots,n}\binom{n}{k}p^kq^{n-k}s^k=(q+ps)^n\]
+
+<p>Poisson:</p>
+
+\[G_X(s)=\sum_{k\ge 0} e^{-\lambda}\frac{\lambda^k}{k!}s^k=e^{-\lambda(1-s)}\]
+
+<p>Negative binomial:</p>
+
+\[G_X(s)=\sum_{k\ge 0}\binom{k-1}{n-1}p^nq^{k-n}s^k=\left(\frac{ps}{1-qs}\right)^k\]
+
+<p>Geometric:</p>
+
+\[G_X(s)=\sum_{k \ge 0}q^{k-1}ps^k=\frac{ps}{1-qs}\]
+
+<hr />
+
+<p>If $G_X(s)=G_Y(s),\forall s$ in an arbitrary small interval around 0 $\Rightarrow \mu_X(k)=\mu_Y(k), \forall k$, i.e. $X \sim Y \Rightarrow G_X$ uniquely characterizes any distribution on $\mathbb{N}$.</p>
+
+<hr />
+
+<h4 id="random-sums-of-independent-rv-s">Random sums of independent RV-s</h4>
+
+<p>Let $X_1,X_2,\dots$ be iid $\mathbb{N}$-valued RV-s. Then the random sum</p>
+
+\[S(\omega)=\sum^{N(\omega)}_{k=1}X_k(\omega)\]
+
+<p>has the generating function \(G_S(s)=G_N(G_X(s))\)</p>
+
+<hr />
+
+<h4 id="branching-process">Branching process</h4>
+
+<p>Family sizes are iid $\mathbb{N}$=values RV-s with known mass function $p_k=\mathbb{P}[C=k]$</p>
+
+<p>$c_{n,k}=$# children living in the $n$th generation, from the $(k-1)$-th individual from $(n-1)$ generation</p>
+
+<p>Size of $n$th generation: \(X_n(\omega)=\sum_{k=1}^{X_{n-1}(\omega)}c_{n,k}(\omega)\)</p>
+
+<p>Subcritical/exponential decay: $\mathbb{E}[C_{n,k}]=\mu &lt; 1$</p>
+
+<p>Supercritical/exponential growth: $\mathbb{E}[C_{n,k}]=\mu &gt; 1$</p>
+
+<ol>
+  <li>
+\[\mathbb{E}[X_n]=\mathbb{E}[\sum_{k=1,\dots,X_{n-1}(\omega)}C_{n,k}]=\mathbb{E}[X_{n-1}]\cdot \mathbb{E}[C_{n,k}]=\mu\mathbb{E}[X_{n-1}]\Rightarrow \mathbb{E}[X_n]=\mu^N\mathbb{E}[X_0]=\mu^N\]
+  </li>
+  <li>
+    <p>$G_n(s)=G_{X_n}(s),X_n=\sum_{k=1,\dots,X_{n-1}(\omega)}C_{n,k}\Rightarrow G_n(s)=G_{n-1}(G_C(s))=G_0(G_C \circ \dots \circ G_C(s))$</p>
+
+    <p>$\Rightarrow G_n(s)=G_1\circ G_1 \circ \dots \circ G_1(s)$.</p>
+
+    <p>Note $G_1(s)=G_C(s)$. In particular $G_n(s)=G_k\circ G_r(s),\forall k,r, k+r=n$.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="extinction-probability-theorem">Extinction Probability Theorem</h4>
+
+<p>The probability $e$ of ultimate extinction is the smallest non-negative root of the equation $x=G(x)$</p>
+
+<hr />
+
+<h4 id="extinctionsurvival-theorem">Extinction/Survival Theorem:</h4>
+
+<p>Assume that $p_1\ne 1$. The probability $e$ of ultimate extinction satisfies $e=1 \Leftrightarrow$ the mean family-size $\mu$ satisfies $\mu \le 1$</p>
+
+\[\gamma(0)&gt;0 \Rightarrow 
+
+​        \begin{cases}
+
+​        e=1 &amp;\text{if }\mu \le 1\\ 
+
+​        0 &lt; e &lt; 1 &amp;\text{if }\mu&gt;1
+
+​    \end{cases}\]
+
+<hr />
+
+<p>Uniform distribution:</p>
+
+\[F(x)=\begin{cases} 0 &amp;x &lt; a\\ \frac{x-a}{b-a} &amp;a \le x \le b\\ 1 &amp;x &gt; b \end{cases}\]
+
+\[f(t)=\begin{cases} \frac{1}{b-a} &amp;t \in [a,b]\\ 0 &amp;\text{otherwise}\end{cases}\]
+
+<p>Exponential distribution:</p>
+
+\[F(x)=\begin{cases} 0 &amp;x \le 0\\ 1-e^{-2x} &amp;x &gt; 0\end{cases}\]
+
+\[f(x)=\begin{cases}\lambda e^{-\lambda x} &amp; x &gt; 0\\ 0 &amp;x \le 0\end{cases}\]
+
+<p>Normal distribution:</p>
+
+\[f(x)=\frac{1}{\sqrt{2 \pi \sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \forall x \in \mathbb{R}\]
+
+<p>Cauchy distribution:</p>
+
+\[f(x)=\frac{1}{\pi(1+x^2)},\forall x \in \mathbb{R}\]
+
+<hr />
+
+\[\mathbb{P}[(x,y) \in \mathcal{B}]=\int_{\mathbb{R}}dx\int_{\mathbb{R}}dy~1_{\mathcal{B}}(x,y)\cdot f_{X,Y}(x,y)\]
+
+<p>$f_X(x)=\int_{\mathbb{R}}dy~f_{X,Y}(x,y)$</p>
+
+<p>Transformation formula: $\mathbb{E}[g(x,y)]=\int_{\mathbb{R}}dy~g(x,y)f_{X,Y}(x,y)$</p>
+
+<hr />
+
+<p>$X,Y$ independent $\Leftrightarrow f_{X,Y}=f_X \cdot f_Y$ $(f_{X+Y}=f_X \cdot f_Y)$</p>
+
+<p>$X_1,\dots, X_n$ independent $\Leftrightarrow f_{X_1,\dots,X_n}(x_1,\dots, x_n)=\prod_{k=1,\dots,n}f_{X_k}(x_k)$</p>
+
+<hr />
+
+<h4 id="covariance--and-correlation">Covariance  and correlation</h4>
+
+<p>Covariance: \(\text{Cov}(X,Y)=\int\int xyf_{X,Y}dxdy-\mathbb{E}[X]\cdot \mathbb{E}[Y]\)</p>
+
+<p>Correlation:</p>
+
+\[\rho(X,Y)=\frac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)\cdot \text{Var}(Y)}}\]
+
+<hr />
+
+<ul>
+  <li>
+    <p>Conditional Densities: \(f_{Y\mid X}(x,y)=\frac{f_{X,Y}(x,y)}{f_X(x)}\)</p>
+
+    <p>If $f_X(x)=0$ then $f_{Y\mid X}(x,y)=0$.</p>
+  </li>
+  <li>
+    <p>Partition Theorem: \(\mathbb{P}[X \in \mathcal{B}]=\int_{\mathbb{R}}dy ~ f_Y(y) \int_{\mathbb{R}}f_{X,Y}(x,y)1_{\mathcal{B}}(x)dx\)</p>
+  </li>
+  <li>
+    <p>$\mathbb{E}[X\mid Y=y]=\int_{\mathbb{R}}x \cdot f_{X\mid Y}(x,y)dx$</p>
+  </li>
+  <li>
+    <p>$\mathbb{E}[g(X)\mid Y=y]=\int_{\mathbb{R}}g(x)\cdot f_{X\mid Y}(x,y)dx$</p>
+  </li>
+  <li>
+    <p>$\mathbb{E}[g(X)]=\int_{\mathbb{R}}f_X(y)\mathbb{E}[g(X)\mid Y=y]$</p>
+  </li>
+</ul>
+
+<hr />
+
+\[\mathbb{E}[X]=\int^{\infty}_0\mathbb{P}[X &gt; t]dt=\int^{\infty}_0\mathbb{P}[X \ge t]dt\]
+
+<hr />
+
+<h4 id="density-of-transformed-rv-s">Density of transformed RV-s</h4>
+
+\[\Phi(x_1,x_2)=\begin{bmatrix} U_1(x_1,x_2)\\U_2(x_1,x_2)\end{bmatrix}\]
+
+\[\Psi\begin{bmatrix}u_1\\u_2\end{bmatrix}=\begin{bmatrix}X_1(u_1,u_2)\\X_2(u_1,u_2)\end{bmatrix}\]
+
+\[f_{U_1,U_2}(u_1,u_2)=f_{X_1,X_2}(X_1(u_1,u_2),X_2(u_1,u_2))\cdot \| det(D\Psi(u_1,u_2))\|\]
+
+<hr />
+
+<h4 id="brownian-motion">Brownian motion</h4>
+
+<ol>
+  <li>$B_0=0$</li>
+  <li>$\forall t, 0 \le t_1 &lt; t_2 &lt; \dots &lt; t_k, (B_{t_2}-B_{t_1}, B_{t_3}-B_{t_2}, \dots, B_{t_k}-B_{t_{k-1}})$ are independent and $(B_{t_k}-B_{t_{k-1}}) \sim N(0, t_k-t_{k-1})$</li>
+</ol>
+
+<p>Fact: $X \sim N(\mu, t), Y \sim N(\gamma, s) \Rightarrow X+Y \sim N(\mu + \gamma, t+s)$</p>
+
+<hr />
+
+<h4 id="brownian-bridge-bm-conditioned-to-by">Brownian bridge (BM conditioned to $B=y$)</h4>
+
+<p>Brownian motion is centered along the line $t \to ty$. The variance is the largest at $t=\frac{1}{2}$.
+\(f_{B_t\mid B_1}(x,y)=\varphi_{t(1-t)}(x-ty) \sim N(ty,t(1-t))\)</p>
+
+<hr />
+
+<h4 id="distribution-of-passage-times">Distribution of passage times</h4>
+
+\[a \ge 0: T_a(\omega) := \min\{t &gt; 0 \mid B_t(\omega)=a\}=\text{ the first time BM reaches level }a\]
+
+<p>$\mathbb{P}[T_a \le t]=2\mathbb{P}[B_t &gt; a]$: $\text{(reflection principle) } \mathbb{P}[B_T &gt; a \mid T_a \le t]=\mathbb{P}[B_T &lt; a \mid T_a \le t]$</p>
+
+\[f_{T_a}(t)=\frac{a}{\sqrt{2\pi t^3}}e^{-\frac{a^2}{2t}}1_{[0,\infty)}\]
+
+<hr />
+
+<h4 id="running-maximum-of-bm">Running maximum of BM</h4>
+
+\[M_s(\omega):=\max_{t \le s}B_t \text{ (the max process)}\]
+
+\[M_s \sim | B_s |\]
+
+<hr />
+
+<h4 id="distribution-of-the-last-visit-to-0-before-t">Distribution of the last visit to 0 before $t$</h4>
+
+\[L_t(\omega)=\max\{s \le t | B_s(\omega)=0\} \in [0,t]\]
+
+<hr />
+
+<h4 id="characteristic-functions">Characteristic functions</h4>
+
+\[\Phi_X(t)=\mathbb{E}[e^{itX}]=\mathbb{E}[\cos(tX)+i\sin(tX)]\]
+
+<p>If this is finite then $\forall t, |\Phi_X(t)| \le 1, \Phi_X(0)=1$.</p>
+
+<hr />
+
+<h4 id="moment-generating-function">Moment generating function</h4>
+
+\[M_X(t)=\mathbb{E}[e^{tX}]\]
+
+<p>ex. exp$(\lambda)$: \(M_X(t)=\int^{\infty}_0e^{tx}\lambda e^{-\lambda x} dx=\begin{cases} \frac{\lambda}{\lambda-t} &amp;\text{if }t &lt; \lambda\\ \infty &amp;\text{if }t \ge \lambda \end{cases}\)</p>
+
+<p>Cauchy: \(M_X(t)=\int^{\infty}_{-\infty} e^{tx}\frac{1}{\pi(1+x^2)} dx=\begin{cases} 1 &amp;\text{if } t=0\\ \infty &amp;\text{if }t \ne 0\end{cases}\)</p>
+
+<hr />
+
+<p>$\Phi_X \equiv \Phi_Y \Leftrightarrow X \sim Y$</p>
+
+<p>$X_1, X_2, \dots, X_n$ independent $\Rightarrow \Phi_{X_1, \dots, X_n} \equiv \prod_{i=1,\dots, n}\Phi_{X_i}$</p>
+
+<hr />
+
+<h4 id="moments">Moments</h4>
+
+\[\frac{d^n}{dt^n}\Phi_X(t=0)=i^n\mathbb{E}[X^n]\]
+
+<hr />
+
+<p>Binomial $(a,b,p)$:</p>
+
+\[\Phi_X(t)=\mathbb{E}[e^{itX}]=pe^{ita}+(1-p)e^{itb}\]
+
+<p>Exponential $(\lambda)$:</p>
+
+\[\Phi_X(t)=\int^{\infty}_0e^{itx}\lambda e^{-\lambda x} dx=\frac{\lambda}{\lambda-it}\]
+
+<p>Cauchy:</p>
+
+\[\Phi_X(t)=\int_{-\infty}^{\infty}e^{itx}\frac{1}{\pi(1+x^2)} dx=e^{|t|}\]
+
+<p>Standard normal:</p>
+
+\[\Phi_X(t)=M_X(it)=e^{-\frac{1}{2}t^2}\]
+
+<p>Normal $(\mu, \sigma^2)$:</p>
+
+\[\Phi_X(t)=\text{exp}(i\mu t-\frac{1}{2}\sigma^2 t^2)\]
+
+\[M_X(t)=\text{exp}(\mu t-\frac{1}{2}\sigma^2 t^2)\]
+
+<hr />
+
+<p>If $\mid\mathbb{E}[X^N]\mid &lt; \infty$ for some positive integer $N$, then \(\Phi_X(t)=\sum^N_{k=0}\frac{1}{k!}(it)^k\mathbb{E}[X^k]+o(t^N)\) as $t \to 0$.</p>
+
+<hr />
+
+<p>X, Y independent, then</p>
+
+<ol>
+  <li>If $Z=aX+b$, then $\Phi_Z(t)=e^{itb}\Phi_X(at)$.</li>
+  <li>$\Phi_{X+Y}(t)=\Phi_X(t)\Phi_Y(t)$.</li>
+</ol>
+
+<hr />
+
+<h4 id="convergence">Convergence</h4>
+
+<ol>
+  <li>in $\mathcal{L}^p$: $X_n \overset{n \to \infty}{\longrightarrow} X$ in $\mathcal{L}^p$, $p \ge 1 \Leftrightarrow \mathbb{E}[|X_n-X|^p] \overset{n \to \infty}{\longrightarrow} 0$</li>
+  <li>in probability: $\forall \epsilon &gt; 0, \mathbb{P}[\omega\mid|X_n(\omega)-X(\omega)| &gt; \epsilon] \overset{n \to \infty}{\longrightarrow} 0$</li>
+  <li>pointwise convergence: $\forall \omega \in \Omega, X_n(\omega) \overset{n \to \infty}{\longrightarrow} X(\omega)$</li>
+</ol>
+
+<hr />
+
+<h4 id="chebyshevs-inequality">Chebyshev’s Inequality</h4>
+
+<ol>
+  <li>$\mathbb{P}[| X| \ge C] \le \frac{1}{C^p}\mathbb{E}[| X|^p],p \ge 1$</li>
+  <li>$\mathbb{P}[X \ge C] \le \frac{1}{e^{\lambda c}}\mathbb{E}[e^{\lambda x}],\lambda &gt; 0$</li>
+</ol>
+
+<hr />
+
+<h4 id="jensens-inequality">Jensen’s Inequality</h4>
+
+<p>Let $\varphi: \mathbb{R} \to \mathbb{R}$ be convex, $X$ be RV with finite mean, then</p>
+
+\[\mathbb{E}[\varphi(X)] \ge \varphi(\mathbb{E}[X])\]
+
+<hr />
+
+<h4 id="weak-law-of-large-numbers-lln">Weak law of large numbers (LLN)</h4>
+
+<p>Let $X_1,X_2, \dots$ RV-s with $\mathbb{E}[X_k]=\mu \in \mathbb{R}$ and variance Var$(X_k)=\sigma^2 &lt; \infty$ <strong>(finite mean and variance)</strong>. If they’re <strong>uncorrelated</strong>:</p>
+
+<ol>
+  <li>$\frac{1}{n}\sum_{k=1,\dots,n}X_k \overset{n \to \infty}{\longrightarrow} \mu$ in $\mathcal{L}^2$;</li>
+  <li>$\frac{1}{n}\sum_{k=1,\dots,n}X_k \longrightarrow \mu$ in probability.</li>
+</ol>
+
+<p><em>Remark.</em> If $X_1,X_2,\dots$ are RVs with finite mean $=\mu$ and they’re pairwise independent, then $\frac{1}{n}S_n \rightarrow \mu$ in $\mathcal{L}^1$ and in probability.</p>
+
+<hr />
+
+<h4 id="convergence-in-distribution">Convergence in distribution</h4>
+
+<p>$\fbox{$X_n \to X$ in distribution $\Leftrightarrow F_{X_n}(t) \overset{n \to \infty}{\longrightarrow} F_X(t), \forall t$ where $F_X(t)$ is continuous}$</p>
+
+<p>Criteria:</p>
+
+<ol>
+  <li>
+    <p>Pointwise convergence of the characteristic function:</p>
+
+\[\Phi_{X_n}(t) \overset{n \to \infty}{\longrightarrow} \Phi_X(t), \forall t \in \mathbb{R}\]
+  </li>
+  <li>
+    <p>Moment generating functions $\forall n \ge 1, (M_{X_n}(t)), M_X(t)$ are finite $\forall t \in \mathbb{R}$ and $\forall t: M_{X_n}(t) \to M_X(t)$.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h4 id="central-limit-theorem-clt">Central Limit Theorem (CLT)</h4>
+
+<p>Let $Z \sim N(0,1)$ and $X_1, X_2, \dots$ be iid sequence of RV-s with finite $\mu =\mathbb{E}[X_k],\sigma^2=$Var$(X_k), S_n :=\sum_{k=1,\dots, n}X_k$. Then</p>
+
+\[\frac{S_n-n\mu}{\sigma\sqrt{n}} \to Z \text{ in distribution}\]
+
+<hr />
+
+<h4 id="berry-esseen">Berry-Esseen</h4>
+
+<p>$(X_k)_{k \ge 1}$ iid, $\mu, \sigma^2 &lt; \infty,$ $\rho:=\mathbb{E}[|X-\mu|^3] &lt; \infty$ (finite third moment) $\Rightarrow \forall t \in \mathbb{R}$</p>
+
+\[|F_{\tilde{S}_n}(t)-\Phi(t)| \le \frac{1}{\sqrt{n}}\frac{3\rho}{\sigma^3}\]
+
+<hr />
+
+<h4 id="possion-process">Possion process</h4>
+
+\[\mathbb{P}[N_{t+n}=n+1|N_t=n]=\lambda\cdot n+o(h)\]
+
+\[\mathbb{P}[N_{t+h} \ge n+2|N_t=n]=o(h)\]
+
+\[\mathbb{P}[N_{t+h}=n|N_t=n]=1-\lambda\cdot n+o(h)\]
+
+<ol>
+  <li>$N_t \sim poi(\lambda t),\forall t \ge 0$</li>
+  <li>$f_{T_n}(s)=1_{[0,\infty)}(s)\frac{\lambda^ns^{n-1}}{(n-1)!}e^{-\lambda t}$ (Erlang distribution)</li>
+  <li>$N_t:=\max\{k \ge 1 \mid T_k \le t\}$ is a poisson process $\Rightarrow$ Markov property</li>
+</ol>
+
+<hr />
+
+<h4 id="a-simple-queuing-model-mm1">A simple Queuing Model (M/M/1)</h4>
+
+<p>For the queue,</p>
+
+\[\mathbb{P}[Q_{t+\delta}=k|Q_t=k]\overset{k\ge 1}{=}(1-\lambda\delta)(1-\mu\delta)=1-(\mu+\lambda)\delta\]
+
+\[\mathbb{P}[Q_{t+\delta}=k+1|Q_t=k]\overset{k \ge 0}{=}\lambda\delta(1-\mu\delta)=\lambda\delta\]
+
+\[\mathbb{P}[Q_{t+\delta}=k-1|Q_t=k]\overset{k \ge 1}{=}(1=\lambda\delta)\mu\delta=\mu\delta\]
+
+\[\mathbb{P}[Q_{t+\delta}=0|Q_t=0]=1-\lambda\delta\]
+
+<ol>
+  <li>$\Pi_k^*=\left(1-\frac{\lambda}{\mu}\right)\left(\frac{\lambda}{\mu}\right)^k$</li>
+  <li>$\mathbb{E}[Q_x]=\sum_{k \ge 0}k\cdot \left(1-\frac{\lambda}{\mu}\right)\left(\frac{\lambda}{\mu}\right)^k=\frac{q}{1-q}=\frac{\lambda}{\mu-\lambda}$</li>
+  <li>Var$(Q_{\infty})=$Var$(T-1)=$Var$(T)-\frac{\mu\lambda}{(\mu-\lambda)^2}$</li>
+</ol>
+
+<p><a href="./..">back</a></p>
+
+  
+  </section>
+</body>
