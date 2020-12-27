@@ -22,6 +22,7 @@ Our work is inspired by the [awesome project](https://github.com/amilkh/cs230-fe
 
 ---
 
+- [Poster](./10701_poster.pdf)
 - [Final Report](./10701_report.pdf)
 - [Github](https://github.com/kapikantzari/10701-final-project)
 - [Video](https://drive.google.com/file/d/1FK9Fy23ziX9rP_OrmA6c16VkCf_t0Zga/view?usp=sharing)
