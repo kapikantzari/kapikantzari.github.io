@@ -172,17 +172,17 @@ strong {
   color:#222;
 }
 
-section {
+section.index {
   width:580px;
   float:right;
   padding-bottom:50px;
 }
 
 section.post {
+  display: block; 
+  margin: 0 auto;
   width:800px;
-  float:left;
   padding-bottom:100px;
-  // margin: 20px;
 }
 
 small {
