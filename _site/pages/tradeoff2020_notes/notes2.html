@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Yun Cheng</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Yun Cheng" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pages/tradeoff2020_notes/notes2.html" />
+<meta property="og:url" content="http://localhost:4000/pages/tradeoff2020_notes/notes2.html" />
+<meta property="og:site_name" content="Yun Cheng" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Yun Cheng" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/tradeoff2020_notes/notes2.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar.png"}},"headline":"Yun Cheng","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <script>
+    MathJax = {
+      chtml: { mathmlSpacing: true },
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <section class="post">
+  
+    <h2 id="found-in-translation-learning-robust-joint-representations-by-cyclic-translations-between-modalities"><a href=".https://arxiv.org/abs/1812.07809">Found in Translation: Learning Robust Joint Representations by Cyclic Translations Between Modalities</a></h2>
+
+<h4 id="challengeopportunity">Challenge/Opportunity</h4>
+
+<ul>
+  <li>For multimodal sentiment analysis, existing works require all modalities to learn a joint representation, which is sensitive to noisy or missing modalities during testing.</li>
+</ul>
+
+<h4 id="soa-knowledgesolution">SOA Knowledge/Solution</h4>
+
+<ul>
+  <li>Earlier works include fusion approaches, multistage approach to learn hierarchical representations, attention and memory mechanism, and generative methods.</li>
+  <li>To infer missing modalities, an approach is to model the probabilistic inter-modal relationships. This is achieved by sampling from the conditional distributions over each modality.</li>
+  <li>Training with modalities dropped at random improves robustness of joint representations.</li>
+</ul>
+
+<h4 id="approach-mctn">Approach (MCTN)</h4>
+
+<ul>
+  <li>
+    <p><strong>Dataset</strong>: CMU-MOSI, ICT-MMMO, and Youtube with the same speaker not appearing in both training and testing.</p>
+  </li>
+  <li>
+    <p><strong>Feature extraction</strong>: GloVe word embeddings (language), Facet (visual), and COVAREP (acoustic), P2FA (alignment)</p>
+  </li>
+  <li>
+    <p><strong>Multimodal cyclic translations</strong>:</p>
+
+    <ul>
+      <li>
+        <p><strong>Forward translations</strong> (source $\to$ target): given source modality $S$ and target $T$,</p>
+
+        <ul>
+          <li>
+            <p>Compute joint embedding (Seq2Seq) 
+\(\mathcal{E}_{S\to T}=f_{\theta_e}(\textbf{X}^S)\)</p>
+          </li>
+          <li>
+            <p>Transform into target modality (beam search approach) 
+\(\textbf{X}^T=f_{\theta_d}(\mathcal{E}_{S\to T})\)</p>
+          </li>
+          <li>
+            <p>Loss: 
+\(\mathcal{L}_t=\mathbb{E}[\ell_{\textbf{X}^T}(\hat{\textbf{X}}^T,\textbf{X}^T)]\)</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Backward translations</strong> (predicted target $\to$ source):</p>
+
+        <ul>
+          <li>
+            <p>Compute joint embedding 
+\(\mathcal{E}_{T \to S}=f_{\theta_e}(\hat{\textbf{X}}^T)\)</p>
+          </li>
+          <li>
+            <p>Transform into target modality 
+\(\hat{\textbf{X}}^S=f_{\theta_d}(\mathcal{E}_{T\to S})\)</p>
+          </li>
+          <li>
+            <p>Loss: 
+\(\mathcal{L}_c=\mathbb{E}[\ell_{\textbf{X}^S}(\hat{\textbf{X}}^S,\textbf{X}^S)]\)</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Prediction</strong>:</p>
+
+        <ul>
+          <li>Loss: 
+\(\mathcal{L}_p=\mathbb{E}[\ell_{\textbf{y}}(\hat{\textbf{y}},\textbf{y})]\)</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Coupled translation-prediction objective function</strong>: $\mathcal{L}=\lambda_t\mathcal{L}_t+\lambda_c\mathcal{L}_c+\mathcal{L}_p$</p>
+      </li>
+    </ul>
+
+    <center><img src="./imgs/mctn2.jpeg" width="400" /></center>
+  </li>
+  <li>
+    <p><strong>Hierarchical MCTN</strong> performs two levels of modality translations and doesn’t use a cyclic translation loss except the first level of translation since the ground truth embedding is unknown.</p>
+
+    <center><img src="./imgs/mctn3.jpeg" width="400" /></center>
+  </li>
+</ul>
+
+<h4 id="results">Results</h4>
+
+<ul>
+  <li>MCTN chieves new SOA results on the tested datasets.</li>
+  <li><mark>MCTN only uses source modality for prediction and thus ensures robustness to noisy/missing modalities.</mark></li>
+  <li><mark>Adding more modalities improves learning more discriminative joint representations.</mark></li>
+  <li><mark>Cyclic translations add regularization while ensuring the representation retain maximal information from all modalities.</mark></li>
+  <li>Language is the most discriminative modality in the joint representation.</li>
+  <li>Representation learning is easier when task is broken down recursively.</li>
+</ul>
+
+<h4 id="thoughts">Thoughts</h4>
+
+<ul>
+  <li>Other than selecting the most significant features in learning, another aspect of model robustness is to handle imperfect training/testing datasets.</li>
+</ul>
+
+  
+  </section>
+</body>

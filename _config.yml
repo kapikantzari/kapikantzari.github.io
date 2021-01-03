@@ -4,6 +4,17 @@ description:
 google_analytics:
 theme: jekyll-theme-minimal
 
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+
 # social-network-links:
 #   email: "yuncheng@andrew.cmu.edu"
 #   facebook: "https://www.facebook.com/yun.cheng.7545"

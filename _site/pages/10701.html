@@ -402,11 +402,14 @@ p(y=1\mid\textbf{X},\textbf{w})=1-\sigma(\textbf{w}^T\textbf{X})=\frac{e^{\textb
 
 \[\mu_1^j=\sum_{\text{$i$ s.t. $y_i=1$}}\frac{x_i^j}{k_1}\qquad \left(\sigma_1^j\right)^2=\sum_{\text{$i$ s.t. $y_i=1$}}\frac{(x_i^j-\mu_1^j)^2}{k_1}\]
       </li>
-      <li>
-        <p>Decision boundary (only vertical/horizontal line because of NB assumption of conditional independence)</p>
+    </ul>
+  </li>
+  <li>
+    <p>Decision boundary (only vertical/horizontal line because of NB assumption of conditional independence)</p>
 
+    <ul>
+      <li>Naïve Bayes assumption: diagonal $\Sigma_y$
         <ul>
-          <li>Naïve Bayes assumption: diagonal $\Sigma_y$</li>
           <li>Linear decision boundary: $\Sigma_{y=0}=\Sigma_{y=1}$</li>
           <li>Quadratic decision boundary: $\Sigma_{y=0}\ne\Sigma_{y=1}$</li>
         </ul>
@@ -755,25 +758,31 @@ p(y=1\mid\textbf{X},\textbf{w})=1-\sigma(\textbf{w}^T\textbf{X})=\frac{e^{\textb
 
 \[\epsilon_k=\frac{\sum_{i=1}^nW_i^{k-1}𝟙_{(y_i\ne h(x_i,\theta_k))}}{\sum_{i=1}^nW_i^{k-1}}\]
               </li>
-              <li>
-                <p>compute hypothesis weight</p>
-
-\[\alpha_k=\frac12\log\left(\frac{1-\epsilon_k}{\epsilon_k}\right)\]
-              </li>
-              <li>
-                <p>Update the weigths on the training examples</p>
-
-\[W_i^k=W_i^{k-1}\exp(-y_ia_kh(x_i,\theta_k))\]
-              </li>
             </ul>
-          </li>
-          <li>
-            <p>Output: the final classifier after $m$ boosting iterations is given by</p>
-
-\[\hat{h}(\textbf{x})=\text{sign}\left(\frac{\sum_{i=1}^m\alpha_ih(\textbf{x},\theta_i)}{\sum_{i=1}^m\alpha_i}\right)\]
           </li>
         </ul>
       </li>
+    </ul>
+  </li>
+  <li>
+    <p>compute hypothesis weight</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $$
+  \alpha_k=\frac12\log\left(\frac{1-\epsilon_k}{\epsilon_k}\right)
+  $$
+    
+- Update the weigths on the training examples
+</code></pre></div>    </div>
+
+\[W_i^k=W_i^{k-1}\exp(-y_ia_kh(x_i,\theta_k))\]
+
+    <ul>
+      <li>Output: the final classifier after $m$ boosting iterations is given by</li>
+    </ul>
+
+\[\hat{h}(\textbf{x})=\text{sign}\left(\frac{\sum_{i=1}^m\alpha_ih(\textbf{x},\theta_i)}{\sum_{i=1}^m\alpha_i}\right)\]
+
+    <ul>
       <li>
         <p>Base learners: decision stumps (axis parallel splits), decision trees, multi-layer neural networks, radial basis function networks</p>
       </li>
