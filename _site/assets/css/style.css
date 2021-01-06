@@ -196,7 +196,7 @@ strong { color: #222; font-weight: 700; }
 
 .downloads a strong { font-size: 14px; display: block; color: #222; }
 
-section.index { width: 580px; float: right; padding-bottom: 50px; }
+section.index { width: 580px; margin: 0 auto; float: right; padding-bottom: 50px; }
 
 section.post { display: block; margin: 0 auto; width: 800px; padding-bottom: 100px; }
 
