@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Yun Cheng</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Yun Cheng" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pages/multibench2021.html" />
+<meta property="og:url" content="http://localhost:4000/pages/multibench2021.html" />
+<meta property="og:site_name" content="Yun Cheng" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Yun Cheng" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/multibench2021.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/avatar.png"}},"headline":"Yun Cheng","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <script>
+    MathJax = {
+      chtml: { mathmlSpacing: true },
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <section class="post">
+  
+    <h2 id="multibench-robustness">MultiBench: Robustness</h2>
+
+<p>Robustness measures the effect on model’s decision by small disturbations on the input data that are often indistinguishable to human observers. A model tends to be unrobust when its decisions rely on insignificant features and thus experiences a more drastic performance drop when evaluated on noisy datasets. Therefore, robustness is an important measure of the alignment between model and human decisions. <a href="https://arxiv.org/abs/1805.12152">Tsipras, Dimitris <em>et al.</em></a> and <a href="https://arxiv.org/abs/1901.08573">Zhang <em>et al.</em></a> have shown that there exists a tradeoff between natural accuracy and robustness.</p>
+
+<p>For this project, I worked on robustness evaluation in the multimodal setting. I worked with <a href="http://www.cs.cmu.edu/~pliang/">Paul Liang</a>, identified modality-specific and multimodal imperfections, developed evaluation metrics for multimodal robustness and integrate them into a unified large-scale benchmark, <strong>MultiBench</strong>, that assesses generalization, complexity, and robustness of multimodal models.</p>
+
+<center>
+  <figure class="image">
+  	<img src="./../imgs/robustness2021.png" alt="robustness2021.png" style="zoom:40%" />
+  	<figcaption>Robustness plots</figcaption>
+  </figure>
+</center>
+
+<p>We visualize the robustness of common multimodal models using two metrics (<a href="https://arxiv.org/abs/2007.00644">Taori <em>et al.</em></a>), relative and effective robustness, as well as a combination of both. The relative robustness measures the absolute accuracy under imperfections while the effective robustness measures the rate of accuracy drops after equalizing for initial accuracy on clean test data. The robustness plots above indicate the tradeoff between accuracy and robustness.</p>
+
+<p>We have submitted the paper to NeurIPS 2021 Track Datasets and Benchmarks Round1.</p>
+
+<h4 id="references">References</h4>
+
+<ol>
+  <li>Rohan Taori, Achal Dave, Vaishaal Shankar, Nicholas Carlini, Benjamin Recht, and Ludwig Schmidt Measuring robustness to natural distribution shifts in image classification. <em>NeurIPS</em>, 2020.</li>
+  <li>Dimitris Tsipras, Shibani Santurkar, Logan Engstrom, Alexander Turner, and Aleksander
+Madry. Robustness may be at odds with accuracy. <em>ICLR</em>, 2019.</li>
+  <li>Hongyang Zhang, Yaodong Yu, Jiantao Jiao, Eric P. Xing, Laurent El Ghaoui, and Michael I.
+Jordan. Theoretically principled trade-off between robustness and accuracy. <em>ICML</em>, 2019.</li>
+</ol>
+
+<hr />
+
+<ul>
+  <li><a href="https://cmu-multicomp-lab.github.io/multibench">Project page</a></li>
+  <li><a href="https://github.com/pliang279/MultiBench">GitHub</a></li>
+  <li><a href="./multibench2021_proposal.pdf">Proposal</a></li>
+</ul>
+
+<p><a href="./..">back</a></p>
+
+
+  
+  </section>
+</body>
