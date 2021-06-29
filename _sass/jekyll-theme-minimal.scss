@@ -56,8 +56,13 @@ a:hover small {
 }
 
 .wrapper {
-  width:900px;
-  margin:0 auto;
+  float:left;
+  width:80%;
+}
+
+.wrapper.avatar {
+  width:30%;
+  // margin-right: 80%;
 }
 
 blockquote {
@@ -102,10 +107,11 @@ th {
 
 img {
   max-width:100%;
+  height: auto;
 }
 
 header {
-  width:250px;
+  width:18%;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -173,16 +179,16 @@ strong {
 }
 
 section.index {
-  width:580px;
-  margin: 0 auto;
-  float:right;
-  padding-bottom:50px;
+  width:95%;
+  float:left;
+  padding-bottom:5%;
+  margin-left: 30%;
 }
 
 section.post {
   display: block; 
   margin: 0 auto;
-  width:800px;
+  width:70%;
   padding-bottom:100px;
 }
 
@@ -218,10 +224,6 @@ footer {
     width:auto;
   }
 
-  header {
-    padding-right:320px;
-  }
-
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
@@ -240,35 +242,19 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-
+@media print, screen and (max-width: 960px) {
   header {
-    padding:0;
+    width: 40%;
+    margin-right: 30%;
   }
 
-  header ul, header p.view {
-    position:static;
+  section.index {
+    margin-left:0;
+    width: auto;
   }
 
   pre, code {
     word-wrap:normal;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
-
-  .downloads {
-    width:99%;
-  }
-
-  .downloads li, .downloads li + li + li {
-    width:33%;
   }
 }
 

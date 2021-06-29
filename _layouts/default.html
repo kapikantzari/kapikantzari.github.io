@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1", user-scalable=yes>
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -17,7 +17,7 @@
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img class="avatar" src="{{site.logo | relative_url}}" alt="Logo"/>
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -28,7 +28,7 @@
         {% endif %}
 
         <p>
-          <a href="./pages/cv_12_2020.pdf">[CV]</a>
+          <a href="./pages/cv_07_2021.pdf">[CV]</a>
           <a href="https://www.linkedin.com/in/yun-catherine-cheng/"> <img src="./imgs/linkedin.png" width="23" height="23"
               style="margin-bottom:-8px;PADDING-LEFT:8px"></a>
           <a href="https://github.com/kapikantzari"> <img src="./imgs/github.png" width="28" height="28"
