@@ -18,7 +18,7 @@ My name is Yun (Catherine) Cheng. I'm a rising senior @ Carnegie Mellon Universi
 
 ---
 
-## Teaching & 
+## Teaching
 
 **TA** [10-301/10-601 Intro to Machine Learning](http://www.cs.cmu.edu/~mgormley/courses/10601/) by Matt Gormley (Spring 2021)
 
@@ -27,7 +27,7 @@ My name is Yun (Catherine) Cheng. I'm a rising senior @ Carnegie Mellon Universi
 
 ---
 
-## Class Notes & Review Pack
+## Notes
 
 [21-301 Combinatorics](./pages/notes/21301.pdf) (Spring 2021)
 
