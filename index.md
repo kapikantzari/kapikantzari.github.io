@@ -12,9 +12,10 @@ My current research interest lies in the intersection of machine learning and ne
 
 ## Projects
 
-- [Edge](./pages/edge2018.html) (15-112 Term Project, 2018)
-- [Emotion Detection with Ensemble-based CNN](./pages/emotion2020.html) (10-701 Final Project, 2020)
 - [MultiBench: Robustness](./pages/multibench2021.html) (Research, 2021)
+- [Emotion Detection with Ensemble-based CNN](./pages/emotion2020.html) (10-701 Final Project, 2020)
+- [Edge](./pages/edge2018.html) (15-112 Term Project, 2018)
+
 
 
 
