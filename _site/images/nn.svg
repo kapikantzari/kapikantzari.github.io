@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2176 482" style="enable-background:new 0 0 2176 482;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st2{font-family:'TimesNewRomanPS-ItalicMT';}
+	.st3{font-size:58.3154px;}
+	.st4{font-size:30px;}
+</style>
+<g>
+	<circle class="st0" cx="587" cy="245" r="76.5"/>
+	<path d="M587,171c40.8,0,74,33.2,74,74s-33.2,74-74,74s-74-33.2-74-74S546.2,171,587,171 M587,166c-43.63,0-79,35.37-79,79
+		s35.37,79,79,79s79-35.37,79-79S630.63,166,587,166L587,166z"/>
+</g>
+<g>
+	<circle class="st0" cx="1088" cy="87" r="76.5"/>
+	<path d="M1088,13c40.8,0,74,33.2,74,74s-33.2,74-74,74c-40.8,0-74-33.2-74-74S1047.2,13,1088,13 M1088,8c-43.63,0-79,35.37-79,79
+		s35.37,79,79,79s79-35.37,79-79S1131.63,8,1088,8L1088,8z"/>
+</g>
+<g>
+	<circle class="st0" cx="1088" cy="403" r="76.5"/>
+	<path d="M1088,329c40.8,0,74,33.2,74,74s-33.2,74-74,74c-40.8,0-74-33.2-74-74S1047.2,329,1088,329 M1088,324
+		c-43.63,0-79,35.37-79,79s35.37,79,79,79s79-35.37,79-79S1131.63,324,1088,324L1088,324z"/>
+</g>
+<g>
+	<circle class="st0" cx="1549" cy="235" r="76.5"/>
+	<path d="M1549,161c40.8,0,74,33.2,74,74s-33.2,74-74,74c-40.8,0-74-33.2-74-74S1508.2,161,1549,161 M1549,156
+		c-43.63,0-79,35.37-79,79s35.37,79,79,79s79-35.37,79-79S1592.63,156,1549,156L1549,156z"/>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="665.5" y1="244.5" x2="1003.51" y2="101.61"/>
+		<g>
+			<polygon points="996.21,126.9 991.64,124.85 1001.74,102.36 978.57,93.93 980.28,89.23 1008.5,99.5 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="665.5" y1="244.5" x2="1003.57" y2="400.23"/>
+		<g>
+			<polygon points="979.97,411.87 978.41,407.12 1001.83,399.43 992.45,376.63 997.08,374.73 1008.5,402.5 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="1166.58" y1="92.71" x2="1464.59" y2="232.2"/>
+		<g>
+			<polygon points="1440.91,243.7 1439.38,238.94 1462.85,231.39 1453.61,208.53 1458.25,206.66 1469.5,234.5 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="1166.5" y1="402.5" x2="1464.76" y2="237.13"/>
+		<g>
+			<polygon points="1460.18,263.05 1455.43,261.5 1463.08,238.06 1439.15,232.14 1440.35,227.28 1469.5,234.5 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 573.4473 256.7148)" class="st2 st3">x</text>
+<text transform="matrix(1 0 0 1 1071.6614 101.0289)"><tspan x="0" y="0" class="st2 st3">z</tspan><tspan x="22.69" y="0" class="st2 st4">1</tspan></text>
+<text transform="matrix(1 0 0 1 1068.079 421.0523)"><tspan x="0" y="0" class="st2 st3">z</tspan><tspan x="22.69" y="0" class="st2 st4">2</tspan></text>
+<text transform="matrix(1 0 0 1 1540.6614 255.0522)" class="st2 st3">y</text>
+</svg>
