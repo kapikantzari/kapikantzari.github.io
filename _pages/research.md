@@ -4,7 +4,7 @@ permalink: /research/
 author_profile: true
 ---
 
-At CMU, I was fortunately advised by [Professor Louis-Philippe Morency](https://www.cs.cmu.edu/~morency/) and [Paul Liang](https://www.cs.cmu.edu/~pliang/). I was also a core member of [MultiComp Lab](http://multicomp.cs.cmu.edu/). 
+At CMU, I was fortunately advised by [Louis-Philippe Morency](https://www.cs.cmu.edu/~morency/) and [Paul Liang](https://www.cs.cmu.edu/~pliang/). I was also a core member of [MultiComp Lab](http://multicomp.cs.cmu.edu/). 
 
 
 <table style="width:100%;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;border:none"><tbody>
