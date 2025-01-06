@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Yun Cheng"
 title_separator          : "|"
-name                     : &name "Yun Cheng"
+name                     : &name "Yun Cheng 程韵"
 description              : &description "personal description"
 url                      : https://kapikantzari.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
