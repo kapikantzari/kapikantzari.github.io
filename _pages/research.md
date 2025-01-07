@@ -4,7 +4,7 @@ permalink: /research/
 author_profile: true
 ---
 
-I am very fortunately advised by [Sanjeev Arora](https://www.cs.princeton.edu/~arora/).
+I am very fortunately advised by [Sanjeev Arora](https://www.cs.princeton.edu/~arora/) during my PhD study at Princeton University.
 
 
 <table style="width:100%;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;border:none"><tbody>
