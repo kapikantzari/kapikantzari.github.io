@@ -4,6 +4,29 @@ permalink: /research/
 author_profile: true
 ---
 
+I am very fortunately advised by [Sanjeev Arora](https://www.cs.princeton.edu/~arora/).
+
+
+<table style="width:100%;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;border:none"><tbody>
+
+<tr>
+<td style="width:25%;vertical-align:middle;border:none">
+    <img src="/images/vlm_s2h.png" alt="clean-usnob" width="200">
+</td>
+<td width="75%" valign="middle" style="border:none">
+    <a href="https://openreview.net/pdf?id=BrjLHbqiYs">
+        <papertitle>Generalizing from SIMPLE to HARD Visual Reasoning: Can We Mitigate Modality Imbalance in VLMs?</papertitle>
+    </a>
+    <br/> 
+    Simon Park*, Abhishek Panigrahi*, <strong>Yun Cheng*</strong>, Dingli Yu, Anirudh Goyal, Sanjeev Arora
+    <br>
+     <em>Preprint 2025</em>
+</td>
+</tr>
+
+</tbody></table>
+
+
 At CMU, I was fortunately advised by [Louis-Philippe Morency](https://www.cs.cmu.edu/~morency/) and [Paul Liang](https://www.cs.cmu.edu/~pliang/). I was also a core member of [MultiComp Lab](http://multicomp.cs.cmu.edu/). 
 
 
