@@ -20,7 +20,7 @@ I am very fortunately advised by [Sanjeev Arora](https://www.cs.princeton.edu/~a
     <br/> 
     Simon Park*, Abhishek Panigrahi*, <strong>Yun Cheng*</strong>, Dingli Yu, Anirudh Goyal, Sanjeev Arora
     <br>
-     <em>Preprint 2025</em>
+     <em>ICML 2025</em>
 </td>
 </tr>
 
