@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 My name is Yun (Catherine) Cheng. I am a second-year CS Ph.D. student at Princeton University, advised by [Sanjeev Arora](https://www.cs.princeton.edu/~arora/). I completed my M.S. in Machine Learning, B.S. in Computer Science, and B.S. in Mathematical Sciences from Carnegie Mellon University.
 
-My current research interests include conceptual understanding of LLMs/VLMs and representation learning.
+My research focuses on conceptual understanding of large language models and vision-language models, with broad interests in developing better, self-evolving AI
 
 <hr>
 
