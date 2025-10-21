@@ -14,7 +14,7 @@ I am very fortunately advised by [Sanjeev Arora](https://www.cs.princeton.edu/~a
     <img src="/images/vlm_s2h.png" alt="clean-usnob" width="200">
 </td>
 <td width="75%" valign="middle" style="border:none">
-    <a href="https://openreview.net/pdf?id=BrjLHbqiYs">
+    <a href="https://arxiv.org/abs/2501.02669">
         <papertitle>Generalizing from SIMPLE to HARD Visual Reasoning: Can We Mitigate Modality Imbalance in VLMs?</papertitle>
     </a>
     <br/> 
@@ -37,8 +37,8 @@ At CMU, I was fortunately advised by [Louis-Philippe Morency](https://www.cs.cmu
     <img src="/images/bounds.png" alt="clean-usnob" width="200">
 </td>
 <td width="75%" valign="middle" style="border:none">
-    <a href="https://openreview.net/pdf?id=BrjLHbqiYs">
-        <papertitle>Quantifying Interactions in Semi-supervised Multimodal Learning: Guarantees and Applications</papertitle>
+    <a href="https://arxiv.org/abs/2306.04539">
+        <papertitle>Multimodal Learning Without Labeled Multimodal Data: Guarantees and Applications</papertitle>
     </a>
     <br/> 
     Paul Pu Liang, Chun Kai Ling, <strong>Yun Cheng</strong>, Alexander Obolenskiy, Yudong Liu, Rohan Pandey, Alex Wilf, Louis-Philippe Morency, Ruslan Salakhutdinov 
