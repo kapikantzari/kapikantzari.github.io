@@ -18,7 +18,7 @@ I am very fortunately advised by [Sanjeev Arora](https://www.cs.princeton.edu/~a
         <papertitle>Contextual Drag: How Errors in the Context Affect LLM Reasoning</papertitle>
     </a>
     <br/> 
-    <strong>Yun Cheng*</strong>, Xingyu Zhu, Haoyu Zhao, Sanjeev Arora
+    <strong>Yun Cheng</strong>, Xingyu Zhu, Haoyu Zhao, Sanjeev Arora
     <br>
      <em>Preprint</em>
 </td>
