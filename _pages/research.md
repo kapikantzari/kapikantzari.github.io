@@ -11,6 +11,21 @@ I am very fortunately advised by [Sanjeev Arora](https://www.cs.princeton.edu/~a
 
 <tr>
 <td style="width:25%;vertical-align:middle;border:none">
+    <img src="/images/contextual_drag.png" alt="clean-usnob" width="200">
+</td>
+<td width="75%" valign="middle" style="border:none">
+    <a href="https://arxiv.org/abs/2602.04288">
+        <papertitle>Contextual Drag: How Errors in the Context Affect LLM Reasoning</papertitle>
+    </a>
+    <br/> 
+    <strong>Yun Cheng*</strong>, Xingyu Zhu, Haoyu Zhao, Sanjeev Arora
+    <br>
+     <em>Preprint</em>
+</td>
+</tr>
+
+<tr>
+<td style="width:25%;vertical-align:middle;border:none">
     <img src="/images/vlm_s2h.png" alt="clean-usnob" width="200">
 </td>
 <td width="75%" valign="middle" style="border:none">

@@ -20,6 +20,7 @@ My research focuses on conceptual understanding of large language models and vis
 <table border="none" style="border:0px;border-collapse: collapse;" rules="none">
 <colgroup><col span="1" style="width: 12%;"><col span="1" style="width: 88%;"></colgroup><tbody><tr><td>
 
+<b> [02/2026]</b></td><td> Check out our new paper <a href="https://arxiv.org/abs/2602.04288">Contextual Drag: How Errors in the Context Affect LLM Reasoning</a>!</td></tr><tr><td>
 <b> [05/2025]</b></td><td> Our paper <a href="https://arxiv.org/abs/2501.02669">Generalizing from SIMPLE to HARD Visual Reasoning: Can We Mitigate Modality Imbalance in VLMs?</a> was accepted by ICML 2025!</td></tr><tr><td>
 <b> [01/2024]</b></td><td> Our paper <a href="https://openreview.net/pdf?id=BrjLHbqiYs">Multimodal Learning Without Labeled Multimodal Data: Guarantees and Applications</a> was accepted by ICLR 2024!</td></tr><tr><td>
 <b> [09/2023]</b></td><td> Our paper <a href="https://arxiv.org/abs/2302.12247">Quantifying & modeling multimodal interactions: An information decomposition framework</a> was accepted by NeurIPS 2023!</td></tr></tbody></table></div>
